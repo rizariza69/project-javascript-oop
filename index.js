@@ -7,7 +7,6 @@ class SuperHero { //bapak
     this.superPower = new superPower
   }
   getCompany(company) {
-    company.superHero = this.name
     this.company.push(company)
   }
 
