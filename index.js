@@ -14,26 +14,26 @@ class SuperHero { //bapak
 }
 
 class IronMan extends SuperHero { // anak
-  constructor(couples, enemy, team) {
+  constructor() {
     super("pops", "Ivan Vanko", "Avenger")
   }
 
 }
 
 class SuperMan extends SuperHero {
-  constructor(couples, enemy, team) {
+  constructor() {
     super('louis Lane', 'Lex Luthor', 'Justice League')
   }
 }
 
 class SpiderMan extends SuperHero {
-  constructor(couples, enemy, team) {
+  constructor() {
     super('Gwen Stacy', 'Dr.Octopus', 'Avengers')
   }
 }
 
 class Aquaman extends SuperHero {
-  constructor(couples, enemy, team) {
+  constructor() {
     super('Mera', 'Black Manta', 'Justice Laeague')
   }
 }
