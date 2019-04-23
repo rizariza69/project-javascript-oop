@@ -57,6 +57,7 @@ class superPower {
 class Corporates {
   constructor(name) {
     this.name = name
+    this.currentCorporates = null
   }
 }
 
