@@ -1,45 +1,44 @@
 class SuperHero { //bapak
-  constructor(loveCouples, enemys, team, corporates) {
-    this.loveCouples = loveCouples
-    this.enemys = enemys
+  constructor(couples, enemy, team, company) {
+    this.couples = couples
+    this.enemy = enemy
     this.team = team
-    this.corporates = []
+    this.company = []
     this.superPower = new superPower
   }
-  getCorporates(corporates) {
-    corporates.superHero = this.name
-    this.corporates.push(corporates)
+  getCompany(company) {
+    company.superHero = this.name
+    this.company.push(company)
   }
 
 }
 
 class IronMan extends SuperHero { // anak
-  constructor(loveCouples, enemys, team) {
+  constructor(couples, enemy, team) {
     super("pops", "Ivan Vanko", "Avenger")
   }
 
 }
 
 class SuperMan extends SuperHero {
-  constructor(loveCouples, enemys, team) {
+  constructor(couples, enemy, team) {
     super('louis Lane', 'Lex Luthor', 'Justice League')
   }
 }
 
 class SpiderMan extends SuperHero {
-  constructor(loveCouples, enemys, team) {
+  constructor(couples, enemy, team) {
     super('Gwen Stacy', 'Dr.Octopus', 'Avengers')
   }
 }
 
 class Aquaman extends SuperHero {
-  constructor(loveCouples, enemys, team) {
+  constructor(couples, enemy, team) {
     super('Mera', 'Black Manta', 'Justice Laeague')
   }
 }
 
 class superPower {
-  constructor() {}
   flyBoom() {
     this.superPower = `Can Fly, Strong, many have Missile and Laser`
   }
@@ -54,31 +53,31 @@ class superPower {
   }
 }
 
-class Corporates {
+class Company {
   constructor(name) {
     this.name = name
-    this.currentCorporates = null
+    this.currentCompany = null
   }
 }
 
-let marvel = new Corporates('Marvel Cinematic Universe')
-const dc = new Corporates('DC Comics')
+let marvel = new Company('Marvel Cinematic Universe')
+const dc = new Company('DC Comics')
 
 const ironman = new IronMan()
 const superman = new SuperMan()
 const spiderman = new SpiderMan()
 const aquaman = new Aquaman()
 
-ironman.getCorporates(marvel)
+ironman.getCompany(marvel)
 ironman.superPower.flyBoom()
 
-superman.getCorporates(dc)
+superman.getCompany(dc)
 superman.superPower.superStrong()
 
-spiderman.getCorporates(marvel)
+spiderman.getCompany(marvel)
 spiderman.superPower.spidey()
 
-aquaman.getCorporates(dc)
+aquaman.getCompany(dc)
 aquaman.superPower.water()
 
 console.log(ironman);
